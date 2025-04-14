@@ -20,8 +20,8 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0f2943; /* Color for headings, subheadings and title throughout the website */
+  --default-color: #2b1f15; /* (#0a0f14) Default color used for the majority of the text content across the entire website */
+  --heading-color: #2a41c4; /* (#0f2943) Color for headings, subheadings and title throughout the website */
   --accent-color: #e87532; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -85,58 +85,6 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
-}
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1135,9 +1083,26 @@ section,
   }
 }
 
+.txt {
+  color: rgb(207, 26, 126);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+.portFolio {
+  background: rgb(167, 25, 25);
+  color: rgb(253, 240, 240);
+  font-size: 2em;
+  font-weight: bolder;
+  padding-inline: 0.7em;
+  padding-block: 0.3em;
+  border-radius: 2em;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 .portfolio .portfolio-filters-container {
   margin-bottom: 40px;
 }
